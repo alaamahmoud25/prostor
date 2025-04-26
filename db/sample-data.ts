@@ -1,4 +1,19 @@
+import {hashSync} from 'bcrypt-ts-edge';
 const sampleData = {
+  users: [
+    {
+      name: 'alaa',
+      email: 'admin@gounia.com',
+      password: hashSync('12345678', 10),
+      role: 'admin',
+    },
+    {
+      name: 'alaaa',
+      email: 'user@gounia.com',
+      password: hashSync('12345678', 10),
+      role: 'user',
+    },
+  ],
   products: [
     {
       name: 'Polo Sporting Stretch Shirt',
